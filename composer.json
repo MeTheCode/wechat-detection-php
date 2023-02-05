@@ -3,7 +3,7 @@
     "description": "一个微信检测的方法，包括链接封禁检测、小程序封禁检测等",
     "type": "library",
     "require": {
-        "php": "^5.6"
+        "php": "^5.6|^7.0|^8.0"
     },
     "require-dev": {
         "php": "^5.6"
