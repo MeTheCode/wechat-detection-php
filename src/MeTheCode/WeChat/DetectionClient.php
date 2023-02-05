@@ -1,6 +1,6 @@
 <?php
 
-namespace MeTheCode\Wechat;
+namespace MeTheCode\WeChat;
 
 class DetectionClient {
 

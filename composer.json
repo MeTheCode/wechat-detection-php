@@ -11,7 +11,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Methecode\\WechatDetectionPhp\\": "src/"
+            "MeTheCode\\": "src/MeTheCode/"
         }
     },
     "authors": [
@@ -20,5 +20,5 @@
             "email": "methecodez@gmail.com"
         }
     ],
-    "minimum-stability": "stable"
+    "minimum-stability": "dev"
 }
