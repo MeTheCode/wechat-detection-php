@@ -1,0 +1,24 @@
+{
+    "name": "methecode/wechat-detection-php",
+    "description": "一个微信检测的方法，包括链接封禁检测、小程序封禁检测等",
+    "type": "library",
+    "require": {
+        "php": "5.6"
+    },
+    "require-dev": {
+        "php": "^5.6"
+    },
+    "license": "Apache",
+    "autoload": {
+        "psr-4": {
+            "Methecode\\WechatDetectionPhp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "MeTheCode",
+            "email": "methecodez@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
