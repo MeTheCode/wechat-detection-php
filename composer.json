@@ -20,6 +20,5 @@
             "email": "methecodez@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
-
+    "minimum-stability": "dev"
 }
