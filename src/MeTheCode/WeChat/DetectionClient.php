@@ -54,7 +54,7 @@ class DetectionClient
 	private function createDefaultHeaders ()
 	{
 		return [
-			'AppCode' => $this->appCode
+			'Authorization' => 'AppCode/'. $this->appCode
 		];
 	}
 	
