@@ -35,7 +35,7 @@ class CurlClient implements \MeTheCode\Http\ClientInterface
 		
 		// 设置超时时间
 		$timeout = isset( $options['timeout'] ) ? $options['timeout'] : self::DEFAULT_TIMEOUT;
-		curl_setopt( $ch , CURLOPT_TIMEOUT_MS , $timeout );
+		curl_setopt( $ch , CURLOPT_TIMEOUT , $timeout );
 		
 		$response = curl_exec( $ch );
 		
