@@ -2,6 +2,8 @@
 
 namespace MeTheCode\Http;
 
+use MeTheCode\Exception\DetectionException;
+
 class CurlClient implements \MeTheCode\Http\ClientInterface
 {
 	const DEFAULT_TIMEOUT = 10;
@@ -44,7 +46,7 @@ class CurlClient implements \MeTheCode\Http\ClientInterface
 		curl_close( $ch );
 		
 		if ( $errno ) {
-			throw new \InvokeException( 'Curl error: ' . $error , -2 );
+			throw new DetectionException( 'Curl error: ' . $error , -2 );
 		}
 		
 		return [

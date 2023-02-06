@@ -2,6 +2,7 @@
 
 namespace MeTheCode\WeChat;
 
+use MeTheCode\Exception\DetectionException;
 use MeTheCode\Http\ClientFactory;
 use MeTheCode\Http\ClientInterface;
 
@@ -39,12 +40,12 @@ class DetectionClient
 		] , $headers );
 		
 		if ( $resp['http_code'] != 200 ) {
-			throw new \InvokeException( "Request failed: {$resp['http_code']} - " . $resp['response'] , -2 );
+			throw new DetectionException( "Request failed: {$resp['http_code']} - " . $resp['response'] , -2 );
 		}
 		
 		$respJson = json_decode( $resp['response'] , true );
 		if ( $respJson['errCode'] !== 0 ) {
-			throw new \InvokeException( "Invoke failed: " . $respJson['errMsg'] , $respJson['errCode'] );
+			throw new DetectionException( "Invoke failed: " . $respJson['errMsg'] , $respJson['errCode'] );
 		}
 		
 		return $respJson['data'];
